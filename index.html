@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador De Financiamento</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="app">
+        <div id="dark-theme">
+          <button id="light"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+              <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+          </button>
+          <button id="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            </svg>
+          </button>
+        </div>
+       <div id="container">
+        <form>
+        
+          <h1>FINANCE</h1>
+          <label for="inPrice">Valor</label>
+          <input type="text" id="inPrice" required>
+  
+          <label for="inEntrada">Entrada</label>
+          <input type="text" id="inEntrada" required>
+  
+          <label for="inParcela">Parcelas</label>
+          <input type="text" id="inParcela" required>
+  
+          <label for="inTaxa">Taxa de juros</label>
+          <input type="text" id="inTaxa" required>
+  
+  
+  
+          <input id="btn" type="submit" value="Revelar financiamento">
+      </form>
+
+       
+
+      <div id="container-out">
+        <h3 id="outPrice"></h3>
+        <h3 id="outEntrada"></h3>
+        <h3 id="outCar"></h3>
+        <h3 id="outParcela"></h3>
+        <h3 id="outJuros"></h3>
+        <h3 id="outTotal"></h3>
+       </div>
+
+       <button id="back">Voltar</button>
+
+      
+       </div>
+
+    
+  
+      
+   <footer>desenvolvido por &nbsp; <a href="https://linkedin.com/in/paulo-fernando-cmend/" target="_blank"> Paulo Fernando</a> 
+    <ul class="wrapper">
+
+      <li class="icon github">
+        <a href="https://github.com/PauloFCM19" target="_blank">
+            <span class="tooltip">GitHub</span>
+            <span><i class="fab fa-github"></i></span>
+        </a>
+      </li>
+
+      <li class="icon instagram">
+        <a href="https://www.instagram.com/paulo.fernando98/" target="_blank">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
+      </li>
+    
+   </ul></footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
