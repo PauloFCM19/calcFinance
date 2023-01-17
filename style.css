@@ -247,7 +247,7 @@ footer{
     
 }
 
-@media (min-width: 500px){
+@media (min-width: 470px){
     body{
         width: 1880px;
         height: 970px;
