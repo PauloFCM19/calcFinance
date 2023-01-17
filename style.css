@@ -27,7 +27,6 @@
     background-color: #2b2b2b;
     color: white;
     zoom: 1.5;
-    margin-bottom: 70px !important;
 }
 
 #dark-theme #dark{
@@ -38,7 +37,7 @@
 
 body{
     width: 415px;
-    height: 890px;
+    
 }
 
 
@@ -47,10 +46,10 @@ body{
     height: 100%;
     background-color: var(--background-darktheme);
     color: var(--bg-secondary-color);
-    padding-top: 25px;
     display: flex;
-    flex-direction: column;   
-    justify-content: space-evenly; 
+    gap: 30px;
+    flex-direction: column;  
+    padding: 25px 0;
 }
 
 #container{
@@ -60,6 +59,8 @@ body{
     background: var(--primary-text-color);
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 140px;
+    margin-top: 60px;
 }
 
 #container form{
@@ -246,11 +247,10 @@ footer{
     
 }
 
-
 @media (min-width: 500px){
     body{
-        width: 100%;
-        height: 1020px;
+        width: 1880px;
+        height: 970px;
         
     }
     #app{
@@ -263,10 +263,10 @@ footer{
     footer{
         justify-content: center;
         position: relative;
-        bottom: -50px;
+        bottom: -70px;
        
     }
     .instagram{
         display: block;
     }
-}
+} 
